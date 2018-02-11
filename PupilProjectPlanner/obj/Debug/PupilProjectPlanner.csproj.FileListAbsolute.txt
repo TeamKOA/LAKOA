@@ -1,0 +1,7 @@
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\bin\Debug\PupilProjectPlanner.xml
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\bin\Debug\PupilProjectPlanner.dll
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\bin\Debug\PupilProjectPlanner.pdb
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\obj\Debug\PupilProjectPlanner.csproj.CoreCompileInputs.cache
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\obj\Debug\PupilProjectPlanner.dll
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\obj\Debug\PupilProjectPlanner.pdb
+F:\Coding\KOA\LAKOA\VisualStudioSolution\PupilProjectPlanner\obj\Debug\PupilProjectPlanner.csprojResolveAssemblyReference.cache

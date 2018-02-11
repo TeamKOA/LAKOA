@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PupilProjectPlanner</name>
+    </assembly>
+    <members>
+        <member name="T:PupilProjectPlanner.ICondition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ICondition.DoesFulfill(PupilProjectPlanner.Pupil,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pupil"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.Condition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,System.Byte,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,System.Byte,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,System.Byte,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,System.Byte,System.Byte)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,PupilProjectPlanner.Parameter,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,PupilProjectPlanner.Parameter,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.#ctor(PupilProjectPlanner.Condition.Types,PupilProjectPlanner.Parameter,PupilProjectPlanner.Parameter)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="P:PupilProjectPlanner.Condition.ParameterAID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Condition.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Condition.ParameterB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Condition.DoesFulfill(PupilProjectPlanner.Pupil,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pupil"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.Condition.Types">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Condition.Types.Equal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Condition.Types.UnEqual">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Condition.Types.Greater">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Condition.Types.Less">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Condition.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PupilProjectPlanner.ConditionPool">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ConditionPool.#ctor(PupilProjectPlanner.ICondition[],System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="conditions"></param>
+            <param name="isOr"></param>
+        </member>
+        <member name="P:PupilProjectPlanner.ConditionPool.IsOr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.ConditionPool.Conditions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ConditionPool.DoesFulfill(PupilProjectPlanner.Pupil,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pupil"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ConditionPool.GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ConditionPool.op_Implicit(PupilProjectPlanner.ICondition[])~PupilProjectPlanner.ConditionPool">
+            <summary>
+            
+            </summary>
+            <param name="conditions"></param>
+        </member>
+        <member name="T:PupilProjectPlanner.Parameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Parameter.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Parameter.CreateParameter(System.Int32,PupilProjectPlanner.Parameter.DataTypes)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PupilProjectPlanner.Parameter.DataType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Parameter.Index">
+            <summary>
+            The index of the corresponding data of each pupil
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Parameter.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PupilProjectPlanner.Parameter.DataTypes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Parameter.DataTypes.Int">
+            <summary>
+            A numeric value
+            </summary>
+        </member>
+        <member name="F:PupilProjectPlanner.Parameter.DataTypes.String">
+            <summary>
+            A string
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Parameter.Compare(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.Parameter.GetBytes(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.Parameter.CreateParameters(PupilProjectPlanner.Parameter.DataTypes[])">
+            <summary>
+            
+            </summary>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.ParameterInt">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterInt.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:PupilProjectPlanner.ParameterInt.DataType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterInt.Compare(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterInt.GetBytes(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterInt.GetBytes(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterInt.GetValue(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.ParameterString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterString.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:PupilProjectPlanner.ParameterString.DataType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterString.Compare(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterString.GetBytes(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterString.GetBytes(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.ParameterString.GetValue(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.Project">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Project.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="maxMemberCount"></param>
+            <param name="minMemberCount"></param>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.MaxMemberCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.MinMemberCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Members">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.FreeSpace">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.IsFull">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.IsOverpopulated">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.IsUnderpopulated">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Overpopulation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.InterestedCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Priority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Interested">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Project.Condition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Project.DetailedToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.Pupil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Pupil.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Pupil.Choices">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PupilProjectPlanner.Pupil.ChoicePriority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.GetPriority(System.Single,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="defaultValue"></param>
+            <param name="preferation"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PupilProjectPlanner.Pupil.Project">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.GetParameter(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.SetParameter(System.Int32,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.SetParameter(System.Int32,System.Object,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.SetParameter(PupilProjectPlanner.Parameter,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.SetParameters(PupilProjectPlanner.Parameter[],System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="parameters"></param>
+            <param name="parameterValues"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.#ctor(System.String,PupilProjectPlanner.Project[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="choices"></param>
+            <param name="parameterCount"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.#ctor(System.String,PupilProjectPlanner.Project[],System.Byte[][])">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="choices"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.#ctor(System.String,PupilProjectPlanner.Project[],PupilProjectPlanner.Parameter[],System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="choices"></param>
+            <param name="parameters"></param>
+            <param name="parameterValues"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.Pupil.DetailedToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.PPP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PupilProjectPlanner.PPP.Assign(System.Collections.Generic.IEnumerable{PupilProjectPlanner.Project},System.Collections.Generic.IEnumerable{PupilProjectPlanner.Pupil},System.Int32,System.Boolean,System.Int32[]@,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="projects"></param>
+            <param name="pupils"></param>
+            <param name="randomSeed"></param>
+            <param name="grantedChoices"></param>
+            <param name="parameters"></param>
+            <param name="preferation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.PPP.Assign(System.Collections.Generic.IEnumerable{PupilProjectPlanner.Project},System.Collections.Generic.IEnumerable{PupilProjectPlanner.Pupil},System.Boolean,System.Int32[]@,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="projects"></param>
+            <param name="pupils"></param>
+            <param name="preferation"></param>
+            <param name="grantedChoices"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.PPP.Assign(System.Collections.Generic.IEnumerable{PupilProjectPlanner.Project},System.Collections.Generic.IEnumerable{PupilProjectPlanner.Pupil},System.Boolean,PupilProjectPlanner.Parameter[])">
+            <summary>
+            
+            </summary>
+            <param name="projects"></param>
+            <param name="pupils"></param>
+            <param name="parameters"></param>
+            <param name="preferation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PupilProjectPlanner.TournamentSort`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:PupilProjectPlanner.TournamentSort`1.Sort(`0[],System.Collections.Generic.IComparer{`0})">
+            <summary>
+            
+            </summary>
+            <param name="objects"></param>
+            <param name="comparer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.TournamentSort`1.Sort(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Collections.Generic.IComparer{`0})">
+            <summary>
+            
+            </summary>
+            <param name="objects"></param>
+            <param name="count"></param>
+            <param name="comparer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.TournamentSort`1.Sort(System.Collections.Generic.ICollection{`0},System.Collections.Generic.IComparer{`0})">
+            <summary>
+            
+            </summary>
+            <param name="objects"></param>
+            <param name="comparer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PupilProjectPlanner.TournamentSort`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Collections.Generic.IComparer{`0})">
+            <summary>
+            
+            </summary>
+            <param name="objects"></param>
+            <param name="count"></param>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:PupilProjectPlanner.TournamentSort`1.GetResult">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
